@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>احراز هویت</title>
+</head>
+
+<body>
+  <div class="registerback">
+    <div class="registerborder">
+      <div class="register1">
+
+        <div class="tab tab2">
+          <button class="tablinks" onclick="openform(event, 'stage1')">مرحله اول</button>
+          <button class="tablinks" onclick="openform(event, 'stage2')">مرحله دوم</button>
+          <button class="tablinks" onclick="openform(event, 'stage3')">مرحله سوم</button>
+          <button class="tablinks" onclick="openform(event, 'stage4')">مرحله چهارم</button>
+          <button class="tablinks" onclick="openform(event, 'stage5')">مرحله پنجم</button>
+
+        </div>
+
+        <div id="stage1" class="tabcontent">
+          <h3>
+            سامانه احراز هویت الکترونیک
+          </h3>
+          <p>برای شروع فرایند احراز هویت لطفا شماره موبایل و کد پیگیری خود را وارد کنید</p>
+          <form action="" class="registerform" method="get">
+
+            <input type="tel" name="phone" value="" placeholder="شماره موبایل"><br>
+            <input type="number" name="quantity" value="" placeholder="کد پیگیری"><br>
+            <input type="submit" value="مرحله بعد"><br>
+
+          </form>
+        </div>
+
+
+        <div id="stage2" class="tabcontent">
+          <h3>
+            کد اعتبارسنجی
+          </h3>
+          <p>کد اعتبارسنجی به شماره 09361111111 ارسال شده است.کد را،در زیر وارد کنید</p>
+          <form action="" class="registerform" method="get">
+
+            <input type="number" name="code" value="" placeholder="کد اعتبارسنجی را وارد کنید"><br>
+
+
+            <input type="submit" value="مرحله قبل">
+            <input type="submit" value="مرحله بعد">
+          </form>
+        </div>
+
+        <div id="stage3" class="tabcontent">
+          <h3>
+            ثبت کد ملی
+          </h3>
+          <p>کد ملی خود را وارد کنید</p>
+          <form action="" class="registerform" method="get">
+
+            <input type="number" name="code" value="" placeholder="کد ملی خود را وارد کنید"><br>
+
+
+            <input type="submit" value="مرحله قبل">
+            <input type="submit" value="مرحله بعد">
+          </form>
+        </div>
+
+
+        <div id="stage4" class="tabcontent">
+          <h3>
+            آپلود تصویر متقاضی
+          </h3>
+
+          <form action="" class="registerform" method="get">
+<p>تصویر باید واضح، مستقیم و با رعایت شئونات اسلامی باشد</p>
+            <input type="image" name="ax" value="" placeholder="تصویر متقاضی"><br>
+              <lable>آپلود تصویر متقاضی</lable>
+              <input type="file" name="myfile" id="img" accept="image/*">
+<br>
+
+            <input type="submit" value="مرحله قبل">
+            <input type="submit" value="مرحله بعد">
+          </form>
+        </div>
+        <script>
+          function openform(evt, formName) {
+            var i, tabcontent, tablinks;
+
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(formName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
+      </div>
+      <div class="register3">
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
