@@ -145,3 +145,9 @@
     transform: translateX(0);
   }
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: red;
+}

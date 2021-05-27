@@ -141,7 +141,7 @@ body {
   font-weight: 700;
   animation: moveInRight ease-out 1s;
 }
-.btn {
+.header__btn {
   padding: 1.8rem 4rem;
   display: inline-block;
   color: var(--text-light);
@@ -362,6 +362,9 @@ body {
 .footer__social-link:hover .footer__icon--linkedin {
   fill: #007bb6;
 }
+.footer__social-link:hover .footer__icon--whatsapp {
+  fill: #4fce5d;
+}
 .footer__social-link--facebook:hover {
   border-color: #3b5998;
 }
@@ -376,6 +379,9 @@ body {
 }
 .footer__social-link--linkedin:hover {
   border-color: #007bb6;
+}
+.footer__social-link--whatsapp:hover {
+  border-color: #4fce5d;
 }
 .footer__about {
   justify-self: flex-start;

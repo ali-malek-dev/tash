@@ -1,0 +1,568 @@
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/iranyekan/eot/iranyekanwebbold(fanum).eot');
+    src: url('../fonts/iranyekan/eot/iranyekanwebbold(fanum).eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iranyekan/woff2/iranyekanwebbold(fanum).woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iranyekan/woff/iranyekanwebbold(fanum).woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iranyekan/ttf/iranyekanwebbold(fanum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/iranyekan/eot/iranyekanweblight(fanum).eot');
+    src: url('../fonts/iranyekan/eot/iranyekanweblight(fanum).eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iranyekan/woff2/iranyekanweblight(fanum).woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iranyekan/woff/iranyekanweblight(fanum).woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iranyekan/ttf/iranyekanweblight(fanum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/iranyekan/eot/iranyekanwebregular(fanum).eot');
+    src: url('../fonts/iranyekan/eot/iranyekanwebregular(fanum).eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iranyekan/woff2/iranyekanwebregular(fanum).woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iranyekan/woff/iranyekanwebregular(fanum).woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iranyekan/ttf/iranyekanwebregular(fanum).ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: iranyekan;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    color: #515151;
+    overflow-x: hidden;
+}
+
+a,
+a:hover {
+    color: #515151;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.direction-ltr {
+    direction: ltr;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.default {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.parent-btn {
+    overflow: hidden;
+}
+
+.dk-btn {
+    font-size: 1.286rem;
+    padding: 18px 80px;
+    border-radius: 8px;
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    line-height: 22px;
+    text-decoration: none;
+    margin-top: 5px;
+    font-family: iranyekan;
+}
+
+button.dk-btn {
+    cursor: pointer;
+    outline: none;
+}
+
+.dk-btn:hover {
+    color: #fff;
+}
+
+.dk-btn:before {
+    transition: all .3s ease-in-out;
+    width: 21%;
+    height: 150%;
+    position: absolute;
+    right: -11px;
+    top: -17px;
+    background: hsla(0, 0%, 100%, .21);
+    content: "";
+    border-radius: 50%;
+}
+
+.dk-btn:not(.disabled):not(.is-inactive):not([disabled]):hover:before {
+    width: 900px;
+    height: 900px;
+    right: -450px;
+    top: -450px;
+    transform: unset;
+}
+
+.dk-btn-info {
+    background-color: #00bfd6;
+}
+
+.dk-btn-danger {
+    background-color: #e74c3c;
+}
+
+.dk-btn-success {
+    background-color: #2ecc71;
+}
+
+.dk-btn-grey {
+    background-color: #263238;
+}
+
+.dk-btn>i {
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: iranyekan;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1676px;
+    }
+}
+
+
+.form-account-title--inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.form-account-link {
+    font-size: 13px;
+    font-size: .929rem;
+    line-height: 1.692;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-link-border {
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #1ca2bd;
+    padding: 0;
+    line-height: 2;
+    font-size: 12px;
+}
+
+.btn-link-border:hover {
+    color: #1ca2bd;
+}
+
+.btn-link-border:after {
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: .85em;
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #1ca2bd;
+}
+
+
+main.profile-user-page .profile-box {
+    margin-bottom: 21px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .1);
+    box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .1);
+    border: 1px solid #dedede;
+}
+
+main.profile-user-page .profile-box-header {
+    position: relative;
+    background-color: #00bfd6;
+    height: 47px;
+}
+
+main.profile-user-page .profile-box-avatar img {
+    width: 54px;
+    height: 54px;
+    background: #fff;
+    background-size: contain;
+    -webkit-box-shadow: 0 0 0 4px hsla(0, 0%, 100%, .61);
+    box-shadow: 0 0 0 4px hsla(0, 0%, 100%, .61);
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+main.profile-user-page .profile-box-btn-edit {
+    width: 16px;
+    height: 16px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    margin-left: -52px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+main.profile-user-page .profile-box-btn-edit i {
+    float: right;
+    font-size: 11px;
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    color: #A8A8A8;
+}
+
+main.profile-user-page .profile-box-username {
+    padding: 23px 20px 19px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+main.profile-user-page .profile-box-tabs {
+    border-top: 1px solid #f1f1f1;
+    background-color: #fcfcfc;
+    min-height: 47px;
+    text-align: center;
+}
+
+main.profile-user-page .profile-box-tabs a.profile-box-tab {
+    display: inline-block;
+    max-width: 50%;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: -.3px;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+    color: #7b7b7b;
+    position: relative;
+}
+
+main.profile-user-page .profile-box-tabs a.profile-box-tab:first-child {
+    border-left: 1px solid #ebebeb;
+}
+
+main.profile-user-page .profile-box-tabs i {
+    display: block;
+}
+
+main.profile-user-page .modal-width-custom .modal-dialog {
+    max-width: 600px;
+}
+
+main.profile-user-page ul.profile-avatars li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+main.profile-user-page .profile-avatars-item {
+    width: 112px;
+    height: 112px;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+    display: block;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+main.profile-user-page .profile-menu {
+    background-color: #fff;
+    -webkit-box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .1);
+    box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .1);
+    border: 1px solid #dedede;
+    margin-bottom: 21px;
+}
+
+main.profile-user-page .profile-menu-header {
+    padding: 18px 39px 18px 0;
+    border-bottom: 1px solid #f3f3f3;
+    font-weight: 700;
+    letter-spacing: .2px;
+    color: #535353;
+    font-size: 13px;
+    font-size: .929rem;
+    line-height: 1.692;
+}
+
+main.profile-user-page .profile-menu-items {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.571;
+    font-weight: 500;
+    letter-spacing: -.3px;
+}
+
+main.profile-user-page .profile-menu-items li a {
+    position: relative;
+    padding: 12px 53px 12px 0;
+    color: #5b5b5b;
+    line-height: 50px;
+}
+
+main.profile-user-page .profile-menu-items li a i {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+main.profile-user-page .profile-menu-items li a.active,
+main.profile-user-page .profile-menu-items li a:hover {
+    background-color: #f6ffff;
+    color: #009ec9;
+}
+
+main.profile-user-page h1.title-tab-content {
+    color: #858585;
+    margin: 10px 0 15px;
+    font-size: 17px;
+}
+
+main.profile-user-page .content-section {
+    background-color: #fff;
+    box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .1);
+    border: 1px solid #dedede;
+    margin-bottom: 23px;
+    padding: 10px 20px;
+}
+
+main.profile-user-page .content-section p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #939393;
+}
+
+main.profile-user-page .content-section p span.title {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 4px;
+    color: #bababa;
+}
+
+main.profile-user-page .content-section form input::placeholder {
+    padding-right: 5px;
+}
+
+main.profile-user-page .content-section form button.btn-default {
+    font-family: iranyekan;
+}
+
+main.profile-user-page .profile-recent-fav-row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+main.profile-user-page .profile-recent-fav-col {
+    width: 100%;
+    min-height: 1px;
+    padding: 4px 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+main.profile-user-page .profile-recent-fav-col-title {
+    -ms-flex: 0 0 70%;
+    -webkit-box-flex: 0;
+    flex: 0 0 70%;
+    max-width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+main.profile-user-page .profile-recent-fav-name {
+    font-size: 13px;
+    font-size: .929rem;
+    line-height: 1.692;
+    margin-bottom: 5px;
+}
+
+
+main.profile-user-page .profile-recent-fav-col-actions {
+    -ms-flex: 0 0 15%;
+    -webkit-box-flex: 0;
+    flex: 0 0 15%;
+    max-width: 15%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+main.profile-user-page .btn-action {
+    width: 33px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: #00bfd6;
+    border: 1px solid #41a7b4;
+    outline: none;
+    cursor: pointer;
+}
+
+main.profile-user-page .btn-action-remove {
+    background-color: #fff;
+    border: 1px solid #c5c5c5;
+    width: 50px;
+    height: 50px;
+}
+
+main.profile-user-page .btn-action-remove:hover{
+    background-color: rgba(233, 32, 32, 0.932);
+}
+
+main.profile-user-page .icon-empty i {
+    font-size: 154px;
+    margin-bottom: 30px;
+    display: block;
+    color: #dadada;
+}
+
+main.profile-user-page h1.text-empty {
+    font-size: 26px;
+    color: #dadada;
+}
+
+main.profile-user-page .profile-return-request-form p {
+    margin-right: 20px;
+    margin-bottom: 11px;
+    color: #737373;
+    font-size: 15px;
+    font-size: 1.071rem;
+    line-height: 1.467;
+}
+
+main.profile-user-page .profile-return-request-form-row .profile-return-request-form-field {
+    float: right;
+    width: 100%;
+}
+
+main.profile-user-page .profile-return-request-form-row .btn-primary {
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #00bfd6;
+    border: 1px solid #148693;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+main.profile-user-page .responsive-profile-menu {
+    display: none;
+}
+
+main.profile-user-page .responsive-profile-menu .dropdown-toggle::after {
+    display: none;
+}
+
+main.profile-user-page .responsive-profile-menu .dropdown-toggle i {
+    float: right;
+    margin: 3px 0 0 10px;
+}
+
+main.profile-user-page .responsive-profile-menu .dropdown-menu a.active-menu,
+main.profile-user-page .responsive-profile-menu .dropdown-menu a:active {
+    background-color: #f6ffff;
+    color: #009ec9;
+}
+
+main.profile-user-page .responsive-profile-menu .dropdown-menu a i {
+    float: right;
+    margin: 4px 0 0 7px;
+}
+
+
+
